@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <header>
+        <div class="main-card">
+          <div class="wrapper">
+            <img class="logo" src="./images/image-jeremy.png" alt="profile picture">
+            <div class="name">
+              <h3>Report for</h3>
+              <h1>Jeremy Robson</h1>
+            </div>
+          </div>
+          <div class="period-wrapper">
+            <button class="period" id="daily" onclick="daily()">Daily</button>
+            <button class="period" id="weekly" onclick="weekly()">Weekly</button>
+            <button class="period" id="monthly" onclick="monthly()">Monthly</button>
+          </div>
+        </div>
+      </header>
+      <section id="card">
+        <div class="card">
+          <div class="image work">
+            <img src="./images/icon-work.svg" alt="work image" class="card-image">
+          </div>
+          <div class="description">
+            <div class="top-part">
+              <h4>Work</h4>
+              <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="ellipsis">
+            </div>
+            <div class="bottom-part">
+                 <h2 class="hours"></h2>
+              <div class="last-time"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image play" >
+            <img src="./images/icon-play.svg" alt="play image" class="card-image">
+          </div>
+          <div class="description">
+            <div class="top-part">
+              <h4>Work</h4>
+              <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="ellipsis">
+            </div>
+            <div class="bottom-part">
+              <h2 class="hours"></h2>
+              <div class="last-time"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image study">
+            <img src="./images/icon-study.svg" alt="study image" class="card-image">
+          </div>
+          <div class="description">
+            <div class="top-part">
+              <h4>Work</h4>
+              <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="ellipsis">
+            </div>
+            <div class="bottom-part">
+              <h2 class="hours"></h2>
+              <div class="last-time"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image exercise">
+            <img src="./images/icon-exercise.svg" alt="exercise image" class="card-image">
+          </div>
+          <div class="description">
+            <div class="top-part">
+              <h4>Work</h4>
+              <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="ellipsis">
+            </div>
+            <div class="bottom-part">
+              <h2 class="hours"></h2>
+              <div class="last-time"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image social">
+            <img src="./images/icon-social.svg" alt="" class="card-image">
+          </div>
+          <div class="description">
+            <div class="top-part">
+              <h4>Work</h4>
+              <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="ellipsis">
+            </div>
+            <div class="bottom-part">
+              <h2 class="hours"></h2>
+              <div class="last-time"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image self-care">
+            <img src="./images/icon-self-care.svg" alt="self care image" class="card-image">
+          </div>
+          <div class="description">
+            <div class="top-part">
+              <h4>Work</h4>
+              <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="ellipsis">
+            </div>
+            <div class="bottom-part">
+              <h2 class="hours"></h2>
+              <div class="last-time"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+
+
+<footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://my-beautiful-portfolio.herokuapp.com/" target="_blank">Toms Ilzbergs</a>.
+  </div>
+</footer>
+
+  <script src="/script.js"></script>
+  <script type="text/javascript">
+    document.getElementById("daily").click();
+  </script>
+</body>
+
+</html>
